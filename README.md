@@ -46,12 +46,9 @@ To change the number of websites being scraped, (for example, to 1000), you can 
 3. Click **Save Sitemap**.
    
 #### 1.3.2. Foundit
-Foundit is a special case. Unlike other sites where we can retrieve the job posting's URL from the job search landing page, this is not possible on Foundit. The reason is that Foundit's job posting's URL is not embedded on the job search landing page but rather dynamically created when a job searcher click on the job posting in the landing page.
-<br>
-Fortunately, we can still build the URL for Foundit's job posting by reverse engineering its creation. These URLs have the following formula:
-<br>
-*https://foundit.in/job/[Job Title]-[Company]-[Location]-[Job ID]*,
-<br>
+Foundit is a special case. Unlike other sites where we can retrieve the job posting's URL from the job search landing page, this is not possible on Foundit. The reason is that Foundit's job posting's URL is not embedded on the job search landing page but rather dynamically created when a job searcher click on the job posting in the landing page.<br>
+Fortunately, we can still build the URL for Foundit's job posting by reverse engineering its creation. These URLs have the following formula:<br>
+:*https://foundit.in/job/[Job Title]-[Company]-[Location]-[Job ID]*,:<br>
 where each field in square brackets is hyphen separated (instead of space separated). Each field in the above formula can be scraped from the job search landing page.
 <br>
 The scraping procedure for Foundit is as follows:
