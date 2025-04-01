@@ -1,0 +1,18 @@
+Personal Information:
+
+Name: Rajesh Kumar
+Email: rajesh.kumar@example.com
+City: Bengaluru
+Education:
+
+Bachelor of Technology in Computer Science, Indian Institute of Technology, Delhi (2015-2019)
+Work Experience:
+
+Control-M Scheduler, Infosys, Bengaluru (2019-Present)
+Designed, implemented, and maintained automated job workflows using Control-M.
+Monitored job execution, troubleshooted errors, and resolved scheduling conflicts.
+Automated manual processes to improve efficiency.
+Monitored the Control-M environment for performance and reliability.
+Responded to job failures and ensured issues were documented, analyzed, and resolved promptly.
+Maintained detailed documentation for all scheduled workflows, dependencies, and processes.
+Worked closely with application, database, and infrastructure teams to understand scheduling requirements.
