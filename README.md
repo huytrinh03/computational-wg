@@ -1,6 +1,6 @@
-# computational-wg
+# Computational Work Group procedures
 
-This repository contains the procedures for different processes executed by the Computational Work Group:
+This repository contains the data files related to the procedures for different processes executed by the Computational Work Group. This file serves as a guide to execute these procedures, which include
 - Collecting data: this process includes web scraping and data cleaning
 - Creating application materials: creating CVs, Cover Letters, and other fake applicants' information
 
