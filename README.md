@@ -45,11 +45,15 @@ To change the number of websites being scraped, (for example, to 1000), you can 
 2. in the **Start URL 1** option, add the range "-[1-50]" after "jobs-in-india" in the Start URL.
 3. Click **Save Sitemap**.
    
-### 1.3.2. Foundit
+#### 1.3.2. Foundit
 Foundit is a special case. Unlike other sites where we can retrieve the job posting's URL from the job search landing page, this is not possible on Foundit. The reason is that Foundit's job posting's URL is not embedded on the job search landing page but rather dynamically created when a job searcher click on the job posting in the landing page.
+<br>
 Fortunately, we can still build the URL for Foundit's job posting by reverse engineering its creation. These URLs have the following formula:
-*https://foundit.in/job/[Job Title]-[Company]-[Location]-[Job ID]*, where each field in square brackets is hyphen separated (instead of space separated)
-Each field in the above formula can be scraped from the job search landing page.
+<br>
+*https://foundit.in/job/[Job Title]-[Company]-[Location]-[Job ID]*,
+<br>
+where each field in square brackets is hyphen separated (instead of space separated). Each field in the above formula can be scraped from the job search landing page.
+<br>
 The scraping procedure for Foundit is as follows:
 1. Scrape the fields necessary for URL creation using WS.
 2. Build the URLs using Python.
@@ -64,7 +68,7 @@ To only scrape jobs with specific filters (location, industry, etc.), you need t
 
 To change the number of websites being scraped, (for example, to 1000), you can change the *limit* parameter in the URL to "limit=1000".
 
-### 1.3.3. Shine
+#### 1.3.3. Shine
 Between step 5 and 6 of section 1.1, one can configure the sitemap to fine-tune the scraping to their needs.
 To only scrape jobs with specific filters (location, industry, etc.), you need to change the starting page from which the scraping is done by following the below steps:
 1. Navigate to [Shine's job search configuration page](https://www.shine.com/new/job-search).
