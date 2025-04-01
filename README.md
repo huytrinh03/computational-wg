@@ -48,15 +48,14 @@ To change the number of websites being scraped, (for example, to 1000), you can 
 #### 1.3.2. Foundit
 Foundit is a special case. Unlike other sites where we can retrieve the job posting's URL from the job search landing page, this is not possible on Foundit. The reason is that Foundit's job posting's URL is not embedded on the job search landing page but rather dynamically created when a job searcher click on the job posting in the landing page.<br>
 Fortunately, we can still build the URL for Foundit's job posting by reverse engineering its creation. These URLs have the following formula:<br>
-:*https://foundit.in/job/[Job Title]-[Company]-[Location]-[Job ID]*,:<br>
+*https://foundit.in/job/[Job Title]-[Company]-[Location]-[Job ID]*,<br>
 where each field in square brackets is hyphen separated (instead of space separated). Each field in the above formula can be scraped from the job search landing page.
 <br>
 The scraping procedure for Foundit is as follows:
 1. Scrape the fields necessary for URL creation using WS.
-2. Build the URLs using Python.
-3. Access each of the built URL and scrape information using Python's Request and BeautifulSoup package.
+2. Run the collecting-data/foundit/foundit_parser.ipynb file to build the URLs using Python, access each of the built URL, and scrape information using Python's Request and BeautifulSoup package.
 
-Between step 5 and 6 of section 1.1, one can configure the sitemap to fine-tune the scraping to their needs.
+Between step 5 and 6 of section 1.1, one can configure the sitemap to fine-tune the scraping to their needs. <br>
 To only scrape jobs with specific filters (location, industry, etc.), you need to change the starting page from which the scraping is done by following the below steps:
 1. Navigate to [Foundit's job search default landing page](https://www.foundit.in/srp/results?sort=1&limit=100&query=%22%22).
 2. Add filters to your job search. After this is done, you will land in a new landing page with the applied filters.
